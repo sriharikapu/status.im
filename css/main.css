@@ -2363,7 +2363,7 @@ span.CodeMirror-selectedtext {
 
 .card--incubate h3,
 .card--incubate .link-arrow {
-  color: #66cbd2; }
+  color: #008bad; }
 
 .card--embark h3,
 .card--embark .link-arrow {
@@ -2403,7 +2403,7 @@ span.CodeMirror-selectedtext {
   background-color: #4360df; }
 
 .card--incubate .card-inner:hover {
-  background-color: #66cbd2; }
+  background-color: #008bad; }
 
 .card--embark .card-inner:hover {
   background-color: #363763; }
@@ -2452,7 +2452,7 @@ span.CodeMirror-selectedtext {
   .card--app a.card-inner {
     background-color: #4360df; }
   .card--incubate a.card-inner {
-    background-color: #66cbd2; }
+    background-color: #008bad; }
   .card--embark a.card-inner {
     background-color: #363763; }
   .card--studio a.card-inner {
