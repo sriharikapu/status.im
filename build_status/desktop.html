@@ -225,7 +225,7 @@
                 <h1 id="Build-Status-Desktop-for-Yourself" class="article-heading"><a href="#Build-Status-Desktop-for-Yourself" class="headerlink" title="Build Status Desktop for Yourself!"></a>Build Status Desktop for Yourself!<a class="article-anchor" href="#Build-Status-Desktop-for-Yourself" aria-hidden="true"></a></h1><h2 id="Prerequisites" class="article-heading"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites<a class="article-anchor" href="#Prerequisites" aria-hidden="true"></a></h2><p>You will need the following tools installed:</p>
 <ul>
 <li>Clojure CLI tool <code>clj</code> <a href="https://clojure.org/guides/getting_started#_installation_on_mac_via_code_brew_code" target="_blank" rel="noopener">https://clojure.org/guides/getting_started#_installation_on_mac_via_code_brew_code</a></li>
-<li>Node.js v.8</li>
+<li>Node.js v.8.9.4, npm 5.5.1 (can be installed via <code>npm install -g npm@5.5.1</code>)</li>
 <li>CMake 3.1.0 or higher</li>
 <li>Additional packages: <code>extra-cmake-modules</code>; Keychain access on <code>Linux</code> requires <code>libgnome-keyring0</code>.<ul>
 <li>Linux: <code>sudo apt install extra-cmake-modules libgnome-keyring0</code></li>
@@ -246,13 +246,9 @@
 </ul>
 </li>
 </ul>
-<h2 id="Caveats" class="article-heading"><a href="#Caveats" class="headerlink" title="Caveats"></a>Caveats<a class="article-anchor" href="#Caveats" aria-hidden="true"></a></h2><ul>
-<li>If npm hangs at some step, check the version. If it’s 5.6.0 or higher, try downgrading to 5.5.1 via <code>npm install -g npm@5.5.1</code></li>
-</ul>
 <h1 id="Building-a-release-package" class="article-heading"><a href="#Building-a-release-package" class="headerlink" title="Building a release package"></a>Building a release package<a class="article-anchor" href="#Building-a-release-package" aria-hidden="true"></a></h1><p>Run the following commands to build a Desktop package for the host environment (Linux or Mac OS):</p>
 <pre><code class="bash">git clone https://github.com/status-im/status-react.git
 cd status-react
-make setup
 make prepare-desktop
 make release-desktop
 </code></pre>
@@ -307,7 +303,7 @@ rm -rf ~/.local/share/Status \
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2018-10-25T20:50:26.220Z" itemprop="dateModified">Last updated: 2018-10-25</time>
+                <time class="article-footer-updated" datetime="2018-10-29T11:57:17.019Z" itemprop="dateModified">Last updated: 2018-10-29</time>
                 <a href="intro_desktop.html" class="article-footer-prev" title="Getting Setup"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="desktop_troubleshooting.html" class="article-footer-next" title="Troubleshooting"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
             </div>
