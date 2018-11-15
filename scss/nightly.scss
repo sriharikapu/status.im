@@ -2,10 +2,18 @@
     float: left;
     width: 100%;
     margin-top: 24px;
-    min-height: 1400px;
+    min-height: 1200px;
     height: 100%;
 }
-.box {
+
+.box-desktop {
+    width: 32%;
+    float: left;
+    padding: 24px;
+    height: 370px;
+}
+
+.box-mobile {
     width: 50%;
     float: left;
     padding: 24px;
@@ -21,7 +29,7 @@
         min-height: 2100px;
     }
 
-    .box {
+    .box-desktop, .box-mobile {
         width: 100%;
         margin-bottom: 24px;
     }
