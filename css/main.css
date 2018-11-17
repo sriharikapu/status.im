@@ -2028,8 +2028,7 @@ span.CodeMirror-selectedtext {
   .nightly-page {
     min-height: 2100px; }
   .box-desktop, .box-mobile {
-    width: 100%;
-    margin-bottom: 24px; } }
+    width: 100%; } }
 
 .parinfer-error {
   background: #FFBEBE;

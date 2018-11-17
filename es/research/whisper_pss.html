@@ -363,57 +363,45 @@
 <li><a href="https://gist.github.com/zelig/d52dab6a4509125f842bbd0dce1e9440" target="_blank" rel="noopener">initial pss description</a></li>
 <li><a href="https://github.com/nolash/ethereum-samples/tree/master/p2p/devp2p" target="_blank" rel="noopener">go-ethereum p2p samples</a></li>
 </ul>
-<h2 id="Appendix-Examples" class="article-heading"><a href="#Appendix-Examples" class="headerlink" title="Appendix: Examples"></a>Appendix: Examples<a class="article-anchor" href="#Appendix-Examples" aria-hidden="true"></a></h2><h3 id="Whisper-message-propagation" class="article-heading"><a href="#Whisper-message-propagation" class="headerlink" title="Whisper message propagation"></a>Whisper message propagation<a class="article-anchor" href="#Whisper-message-propagation" aria-hidden="true"></a></h3><pre><code class="graphviz">
+<h2 id="Appendix-Examples" class="article-heading"><a href="#Appendix-Examples" class="headerlink" title="Appendix: Examples"></a>Appendix: Examples<a class="article-anchor" href="#Appendix-Examples" aria-hidden="true"></a></h2><h3 id="Whisper-message-propagation" class="article-heading"><a href="#Whisper-message-propagation" class="headerlink" title="Whisper message propagation"></a>Whisper message propagation<a class="article-anchor" href="#Whisper-message-propagation" aria-hidden="true"></a></h3><p><img src="https://g.gravizo.com/svg?
 graph nodes {
   00 -- 01; 00 -- 10 ; 10 -- 11; 01 -- 11; 
   01 -- 10;
   {rank=same; 00 01} {rank=same; 10 11}
-}
-
-</code></pre>
-<pre><code class="graphviz">
+}" alt="Whisper message propagation"></p>
+<p><img src="https://g.gravizo.com/svg?
 digraph step1 {
   00 -&gt; 01; 00 -&gt; 10;
   {rank=same; 00 01} {rank=same; 10 11}
-}
-
-</code></pre>
-<pre><code class="graphviz">
+}" alt="Whisper message propagation Step 1"></p>
+<p><img src="https://g.gravizo.com/svg?
 digraph step2 {
   00; 01 -&gt; 10; 10 -&gt; 11; 01 -&gt; 11; 10 -&gt; 01;
   {rank=same; 00 01} {rank=same; 10 11}
-}
-
-</code></pre>
+}" alt="Whisper message propagation Step 2"></p>
 <p>Notice how <code>10</code>, <code>01</code> potentially receive message twice (depending on timing) and <code>11</code> is guaranteed to recieve twice (in this setup, due to locally limited knowledge in <code>01</code>, <code>10</code> nodes)</p>
 <h3 id="PSS-message-propagation" class="article-heading"><a href="#PSS-message-propagation" class="headerlink" title="PSS message propagation"></a>PSS message propagation<a class="article-anchor" href="#PSS-message-propagation" aria-hidden="true"></a></h3><p>Example propagation to address <code>1*</code>:</p>
-<pre><code class="graphviz">
+<p><img src="https://g.gravizo.com/svg?
 graph nodes {
   00 -- 01; 00 -- 10 ; 10 -- 11; 01 -- 11; 
   01 -- 10;
   {rank=same; 00 01} {rank=same; 10 11}
-}
-
-</code></pre>
-<pre><code class="graphviz">
+}" alt="PSS message propagation"></p>
+<p><img src="https://g.gravizo.com/svg?
 digraph step1 {
   00 -&gt; 10;
   {rank=same; 00 01} {rank=same; 10 11}
-}
-
-</code></pre>
-<pre><code class="graphviz">
-digraph step1 {
+}" alt="PSS message propagation Step 1"></p>
+<p><img src="https://g.gravizo.com/svg?
+digraph step2 {
   00; 10 -&gt; 11; 
   {rank=same; 00 01} {rank=same; 10 11}
-}
-
-</code></pre>
+}" alt="PSS message propagation Step 2"></p>
 <p>Either of <code>10</code>, <code>11</code> could be recipient, message reaches both!</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2018-11-05T14:38:36.707Z" itemprop="dateModified">Last updated: 2018-11-05</time>
+                <time class="article-footer-updated" datetime="2018-11-17T03:26:22.982Z" itemprop="dateModified">Last updated: 2018-11-17</time>
                 
               </footer>
             </div>
